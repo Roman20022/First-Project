@@ -1,6 +1,16 @@
 import tkinter as tk
 t = tk.Tk()
-g = tk.Label(text="This is for my favorite teacher"
-                  "Hey, thank yo for teaching us interesting themes."
-                  "Good luck, amigo)")
+t.geometry("1000x750")
+t.title("For my teacher")
+t["bg"] = "#b9abff"
+g = tk.Label(text="This is for my favorite teacher. Save yourself!")
+y = tk.Label(text="Hey, thank yo for teaching us interesting themes.")
+h = tk.Label(text=" Good luck, amigo)")
+g.configure(font=("Profont", 15, "bold", "italic"))
+y.configure(font=("Monaco", 20, "bold", "italic"))
+h.configure(font=("Menlo", 20, "bold", "italic"))
+t.resizable(width=False, height=False)
+g.pack()
+y.pack()
+h.pack()
 t.mainloop()
